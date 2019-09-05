@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/TDT4250-Assignments/src" modelPluginID="TDT4250-Assignments"
+    modelName="Study" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>study.ecore</foreignModel>
+  <genPackages prefix="Study" disposableProviderFactory="true" ecorePackage="study.ecore#/">
+    <genClasses ecoreClass="study.ecore#//Programme">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Programme/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Programme/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Programme/duration"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference study.ecore#//Programme/semesters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference study.ecore#//Programme/specializations"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference study.ecore#//Programme/department"/>
+    </genClasses>
+    <genClasses ecoreClass="study.ecore#//Semester">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Semester/year"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Semester/spring"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference study.ecore#//Semester/courses"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference study.ecore#//Semester/programme"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference study.ecore#//Semester/specialization"/>
+    </genClasses>
+    <genClasses ecoreClass="study.ecore#//Specialization">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Specialization/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference study.ecore#//Specialization/semesters"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference study.ecore#//Specialization/programme"/>
+    </genClasses>
+    <genClasses ecoreClass="study.ecore#//SemesterCourse">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//SemesterCourse/mandatory"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference study.ecore#//SemesterCourse/course"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference study.ecore#//SemesterCourse/semester"/>
+    </genClasses>
+    <genClasses ecoreClass="study.ecore#//Course">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Course/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Course/credits"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Course/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Course/level"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference study.ecore#//Course/department"/>
+    </genClasses>
+    <genClasses ecoreClass="study.ecore#//Department">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference study.ecore#//Department/courses"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference study.ecore#//Department/programs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Department/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

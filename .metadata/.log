@@ -1,0 +1,13 @@
+!SESSION 2019-08-29 11:14:27.842 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=11.0.4
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -data /home/mats/eclipse-workspace/TDT4250-Assignments -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-08-29 11:14:36.807
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.ui 2 2 2019-08-29 11:14:59.578
+!MESSAGE Invalid preference category path: org.eclipse.elk.core.ui.preferences.layout (bundle: org.eclipse.elk.alg.graphviz.layouter, page: org.eclipse.elk.alg.graphviz.preferences)

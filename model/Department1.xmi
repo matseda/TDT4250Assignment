@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TDT4250.Assignments.study:Department
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:TDT4250.Assignments.study="TDT4250.Assignments.study"
+    xsi:schemaLocation="TDT4250.Assignments.study study.ecore"
+    name="Department of Computer Science">
+  <courses code="TDT4136"
+      credits="7.5"
+      name="Introduksjon til kunstig intelligens"
+      level="4"/>
+  <courses code="TDT4175"
+      credits="7.5"
+      name="Informasjonssystemer"
+      level="4"/>
+  <courses code="IT3402"
+      credits="7.5"
+      name="Design av grafiske brukergrensesnitt"
+      level="4"/>
+  <courses code="TDT4117"
+      credits="7.5"
+      name="Informasjonsgjenfinning"
+      level="4"/>
+  <courses code="TDT4225"
+      credits="7.5"
+      name="Store, distribuerte datamengder"
+      level="4"/>
+  <courses code="TDT4250"
+      credits="7.5"
+      name="Avansert programvaredesign"
+      level="4"/>
+  <courses code="TDT4100"
+      credits="7.5"
+      name="Objektorientert programmering"
+      level="1"/>
+  <courses code="TDT4180"
+      credits="7.5"
+      name="Menneksemaskin-interaksjon"
+      level="1"/>
+  <courses code="TFE4101"
+      credits="7.5"
+      name="Krets- og digitalteknikk"
+      level="1"/>
+  <courses code="TMA4115"
+      credits="7.5"
+      name="Matematikk 3"
+      level="1"/>
+  <programs
+      name="Datateknologi, master 2-årig"
+      code="MIDT"
+      duration="2">
+    <specializations
+        name="Programvareutvikling">
+      <semesters
+          year="4">
+        <courses
+            mandatory="true"
+            course="//@courses.1"/>
+        <courses
+            mandatory="true"
+            course="//@courses.0"/>
+        <courses
+            course="//@courses.2"/>
+        <courses
+            course="//@courses.3"/>
+        <courses
+            course="//@courses.4"/>
+        <courses
+            course="//@courses.5"/>
+      </semesters>
+    </specializations>
+  </programs>
+  <programs
+      name="Programme Datateknologi, 5-årig"
+      code="MTDT"
+      duration="5">
+    <semesters
+        year="1"
+        spring="true">
+      <courses
+          mandatory="true"
+          course="//@courses.6"/>
+      <courses
+          mandatory="true"
+          course="//@courses.7"/>
+      <courses
+          mandatory="true"
+          course="//@courses.8"/>
+      <courses
+          mandatory="true"
+          course="//@courses.9"/>
+    </semesters>
+  </programs>
+</TDT4250.Assignments.study:Department>
