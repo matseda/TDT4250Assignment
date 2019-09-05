@@ -20,3 +20,9 @@ This is the Dynamic Instance used to test if the model is functioning as it shou
 ## src
 This folder containes the generated model code made using the study.genmodel file.
 * In study.util/StudyValidator.java the implementation of the restriction for the Course is located. The method "validateCourse_courseCredits" is responsible for this restriction. 
+
+# Constraints
+There are two constraint in this model
+* Semester (OCL): A semester cannot have more than 30 credits in total in mandatory courses. 
+* Course (Java): A course cannot have less than 5.0 credits
+
