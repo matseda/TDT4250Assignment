@@ -26,3 +26,5 @@ There are two constraint in this model
 * Semester (OCL): A semester cannot have more than 30 credits in total in mandatory courses. 
 * Course (Java): A course cannot have less than 5.0 credits
 
+# PlantUML Diagram
+![PlantUML Diagram](https://github.com/matseda/TDT4250Assignment/blob/master/Assignment1.png)
