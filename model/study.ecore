@@ -24,13 +24,14 @@
       <details key="courseCredits" value="self.courses -> select(s | s.mandatory ).course.credits -> sum() &lt;= 30.0 "/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="year" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="spring" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="courses" upperBound="-1"
         eType="#//SemesterCourse" containment="true" eOpposite="#//SemesterCourse/semester"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="programme" eType="#//Programme"
         eOpposite="#//Programme/semesters"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="specialization" eType="#//Specialization"
         eOpposite="#//Specialization/semesters"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Season" lowerBound="1"
+        eType="#//Season"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Specialization">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -62,5 +63,9 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="programs" upperBound="-1"
         eType="#//Programme" containment="true" eOpposite="#//Programme/department"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Season">
+    <eLiterals name="FALL"/>
+    <eLiterals name="SPRING" value="1"/>
   </eClassifiers>
 </ecore:EPackage>

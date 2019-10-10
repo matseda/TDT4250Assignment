@@ -71,25 +71,4 @@
       </semesters>
     </specializations>
   </programs>
-  <programs
-      name="Programme Datateknologi, 5-årig"
-      code="MTDT"
-      duration="5">
-    <semesters
-        year="1"
-        spring="true">
-      <courses
-          mandatory="true"
-          course="//@courses.6"/>
-      <courses
-          mandatory="true"
-          course="//@courses.7"/>
-      <courses
-          mandatory="true"
-          course="//@courses.8"/>
-      <courses
-          mandatory="true"
-          course="//@courses.9"/>
-    </semesters>
-  </programs>
 </TDT4250.Assignments.study:Department>

@@ -6,6 +6,10 @@
     operationReflection="true" importOrganizing="true">
   <foreignModel>study.ecore</foreignModel>
   <genPackages prefix="Study" disposableProviderFactory="true" ecorePackage="study.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="study.ecore#//Season">
+      <genEnumLiterals ecoreEnumLiteral="study.ecore#//Season/FALL"/>
+      <genEnumLiterals ecoreEnumLiteral="study.ecore#//Season/SPRING"/>
+    </genEnums>
     <genClasses ecoreClass="study.ecore#//Programme">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Programme/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Programme/code"/>
@@ -16,10 +20,10 @@
     </genClasses>
     <genClasses ecoreClass="study.ecore#//Semester">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Semester/year"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Semester/spring"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference study.ecore#//Semester/courses"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference study.ecore#//Semester/programme"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference study.ecore#//Semester/specialization"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Semester/Season"/>
     </genClasses>
     <genClasses ecoreClass="study.ecore#//Specialization">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute study.ecore#//Specialization/name"/>
